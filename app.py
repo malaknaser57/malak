@@ -15,3 +15,6 @@ def predict():
   return render_template('index.html',prediction=result)
 if __name__=='__main__':
   app.run()
+import pickle
+
+model = pickle.load(open("model.pkl","rb"))
