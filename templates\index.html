@@ -3,16 +3,22 @@
 <head>
 <title>Spam Detector</title>
 </head>
+
 <body>
-<h1> Email Spam Detector</h1>
-<from action='/predict' method='post'>
-<textarea name='email' rows='10' cols='40'></textarea>
-<br><br>
-<button typy='submit'>
-Predict
-</button>
-</from>
-<br> 
-<h2>{{ prediction }}</h2>
+
+<h2>Email Spam Detector</h2>
+
+<form action="/predict" method="post">
+
+<input type="text" name="email" placeholder="Enter email text">
+
+<button type="submit">Predict</button>
+
+</form>
+
+<br>
+
+<h3>{{ prediction_text }}</h3>
+
 </body>
 </html>
